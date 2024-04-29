@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eccomerce Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Handcrafted<span>.</span></a>
+        <nav class="navbar">
+            <a href="/home">home</a>
+            <a href="/collections">collections</a>
+            <a href="/about">about us</a>
+            <a href="/contact">contact us</a>
+        </nav>
+
+        <div class="icons"> 
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+            <a href="#" class="fas fa-user"></a>
+        
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₹0</div>
+                </div>
+                <button type="button" class="btn-buy" id="buyNowButton">Buy Now</button>
+                <i class="fa fa-window-close" aria-hidden="true" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <section class="shop container">
+        
+        <h2 class="section-title">Treasures</h2>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="bag1.jpg" alt="" class="product-img">
+                <h2 class="product-title">Multi-Handbag</h2>
+                <span class="price">₹25</span>
+                <i class='fas fa-shopping-cart add-cart'></i>
+                
+            </div>
+            <div class="product-box">
+                <img src="bag2.jpg" alt="" class="product-img">
+                <h2 class="product-title">Leather bag</h2>
+                <span class="price">₹90</span>
+                <i class='fas fa-shopping-cart add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="bag8.jpg" alt="" class="product-img">
+                <h2 class="product-title">Shopping bag</h2>
+                <span class="price">₹100</span>
+                <i class='fas fa-shopping-cart add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="bag9.jpg" alt="" class="product-img">
+                <h2 class="product-title">VegetablesBag</h2>
+                <span class="price">₹80</span>
+                <i class='fas fa-shopping-cart add-cart' ></i>
+                
+            </div>
+            <div class="product-box">
+                <img src="mushroom-braided-bowl.jpg" alt="" class="product-img">
+                <h2 class="product-title">bowl</h2>
+                <span class="price">₹75</span>
+                <i class='fas fa-shopping-cart add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="photo-1532336046430-ac133c41060e.avif" alt="" class="product-img">
+                <h2 class="product-title">Curtains</h2>
+                <span class="price">₹150</span>
+                <i class='fas fa-shopping-cart add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="photo-1617596225496-1d9da33a144b.avif" alt="" class="product-img">
+                <h2 class="product-title">Curtains</h2>
+                <span class="price">₹200</span>
+                <i class='fas fa-shopping-cart add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="photo-1535383749833-770a4e09edec.avif" alt="" class="product-img">
+                <h2 class="product-title">Curtains</h2>
+                <span class="price">₹400</span>
+                <i class='fas fa-shopping-cart add-cart'></i>
+            </div>
+        </div>  
+    </section>
+    <script>
+        document.getElementById("buyNowButton").addEventListener("click", function() {
+           
+            window.location.href = "/payment";
+        });
+    </script>
+    <script src="addtocart.js"></script>
+
+
+</body>
+</html>

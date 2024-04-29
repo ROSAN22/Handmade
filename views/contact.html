@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Handcrafted<span>.</span></a>
+        <nav class="navbar">
+            <a href="/home">home</a>
+            <a href="/collections">collections</a>
+            <a href="/about">about us</a>
+            <a href="/contact">contact us</a>
+        </nav>
+
+        <div class="icons"> 
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart" id="cart-icon"></a>
+            <a href="#" class="fas fa-user"></a>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content">
+                    
+                </div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">₹0</div>
+                </div>
+                <button type="button" class="btn-buy" id="buyNowButton">Buy Now</button>
+                <i class="fa fa-window-close" aria-hidden="true" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <div class="wrapper" ><h2> Contact US</h2></div>
+    <div class="ContactUs">
+        
+        <div class="Title">
+            <center><h2>Get in Touch</h2></center>
+        </div>
+        <div class="box">
+            <!--Form-->
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form>
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                 <span>First Name</span>
+                                 <input type="text" placeholder="Enter First Name">
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="Enter Last Name">
+                           </div>
+                        </div>
+                        <div class="row50">
+                            <div class="inputBox">
+                                 <span>Email</span>
+                                 <input type="text" placeholder="@gmail.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="text" placeholder="Enter Mobile Number">
+                           </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                 <span>Message</span>
+                                 <textarea placeholder="Write your Message here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--info Box-->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="location"></ion-icon></span>
+                        <p>Sona College of Technology,Salem<br>TAMILNADU</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="adselites@gmail.com">adselites@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="Tel:91 6619414350">6619414350</a>
+                    </div>
+                    <!--Social media links-->
+                    <ul class="sci">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Map-->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.2296003020747!2d78.12443880000001!3d11.6781339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf065115b5f7d%3A0x1d08f4d05518b24d!2sSona%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1711999355904!5m2!1sen!2sin" width="200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div> 
+</section>
+<script>
+    document.getElementById("buyNowButton").addEventListener("click", function() {
+       
+        window.location.href = "/payment";
+    });
+</script>
+<script src="addtocart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
